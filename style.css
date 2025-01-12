@@ -1,20 +1,91 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #00ff00, #006400);
-    color: white;
-    text-align: center;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-#content {
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00c853, #009688);
+}
+
+.container {
+    text-align: center;
     padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#videos {
-    margin-top: 20px;
+.logo {
+    width: 70%;
+    margin-bottom: 20px;
 }
 
-#location, #contador {
-    margin-top: 20px;
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.gender-age {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+input[type="number"] {
+    width: 70px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #00c853;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #009688;
+}
+
+.notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.success {
+    background-color: #4CAF50;
+}
+
+.error {
+    background-color: #FF6347;
+}
+
+@media (max-width: 400px) {
+    h2 {
+        font-size: 1.2em;
+    }
 }
