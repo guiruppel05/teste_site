@@ -3,55 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curitiba Treina</title>
+    <title>Página de Conteúdo com Feedback</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <img src="curitiba_treina.png" alt="Logo Curitiba Treina" class="logo">
+    <header>
+        <h1>Bem-vindo ao nosso Blog</h1>
+    </header>
 
-        <h2>Seja bem vindo(a) ao Curitiba Treina!</h2>
-        <p>Antes de iniciar seu treino, conta pra gente em qual Academia ao Ar Livre você está:</p>
-        
-        <!-- Seleção de Academia com carregamento dinâmico e geolocalização -->
-        <select id="academiaSelect" aria-label="Selecione a academia mais próxima">
-            <option value="">Carregando academias...</option>
-        </select>
+    <main>
+        <article>
+            <h2>Título do Artigo</h2>
+            <p>Este é o conteúdo do artigo...</p>
+        </article>
+    </main>
 
-        <p>Além disso, poderia contar pra gente também qual seu sexo e sua idade?</p>
-        
-        <!-- Gênero e Idade -->
-        <div class="gender-age">
-            <label>
-                <input type="radio" name="gender" value="Masculino" aria-label="Masculino">
-                Masculino
-            </label>
-            <label>
-                <input type="radio" name="gender" value="Feminino" aria-label="Feminino">
-                Feminino
-            </label>
-            <input type="number" id="age" placeholder="Idade" min="1" max="100" aria-label="Idade">
-        </div>
-        
-        <!-- Primeira vez -->
-        <p>É a sua primeira vez aqui?</p>
-        <button class="btn-yes">Sim</button>
-        <button class="btn-no">Não</button>
-
-        <!-- Formulário de Feedback -->
-        <h3>Deixe seu feedback</h3>
-        <form id="feedbackForm" onsubmit="return sendFeedback(event)">
-            <textarea id="feedback" placeholder="Sua mensagem..." required aria-label="Mensagem de feedback"></textarea>
+    <section id="feedback-section">
+        <h3>Deixe seu Feedback</h3>
+        <form id="feedback-form">
+            <label for="feedback">Seu Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
             <button type="submit">Enviar</button>
         </form>
+        <div id="feedback-messages"></div>
+    </section>
 
-        <!-- Contador de acessos -->
-        <p id="contadorAcessos">Carregando contador de acessos...</p>
-
-        <footer>
-            Desenvolvido por Guilherme Ruppel <br> R.A.: 3930639
-        </footer>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
