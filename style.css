@@ -1,27 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-}
-
-main {
-    padding: 1em;
-}
-
-#feedback-section {
-    margin-top: 2em;
-}
-
-#feedback-messages {
-    margin-top: 1em;
-    border-top: 1px solid #ccc;
-    padding-top: 1em;
 }
 
 .popup {
