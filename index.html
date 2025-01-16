@@ -1,42 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Conteúdo com Feedback</title>
+    <title>Popup de Boas-Vindas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao nosso Blog</h1>
-    </header>
-
-    <main>
-        <article>
-            <h2>Título do Artigo</h2>
-            <p>Este é o conteúdo do artigo...</p>
-        </article>
-    </main>
-
-    <div id="popup" class="popup"> 
-        <div class="popup-content"> 
-            <span class="close-button">&times;</span> 
-            <h2>Bem-vindo ao nosso site!</h2> 
-            <p>Esperamos que você aproveite sua visita. Se precisar de ajuda, estamos aqui para ajudar!
-            </p> 
-        </div> 
-    </div> 
-    <script src="script2.js"></script>
-
-    <section id="feedback-section">
-        <h3>Deixe seu Feedback</h3>
-        <form id="feedback-form">
-            <label for="feedback">Seu Feedback:</label>
-            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
-            <button type="submit">Enviar</button>
-        </form>
-        <div id="feedback-messages"></div>
-    </section>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>Bem-vindo ao nosso site!</h2>
+            <p>Esperamos que você aproveite sua visita. Se precisar de ajuda, estamos aqui para ajudar!</p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
